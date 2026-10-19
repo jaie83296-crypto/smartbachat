@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>SmartBachat Hub — Viral Reel Codes (#101), Loot Deals & Cashback Cards</title>
+  <meta name="description" content="Search Reel Product Code (#101, #102), Top Loot Deals, and Best Zero-Fee Cashback Cards & Finance Offers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #f97316;
+      --accent-dark: #ea580c;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding-bottom: 80px;
+    }
+
+    /* Top Trust Header (Flipkart/Amazon inspired clean light look) */
+    .top-header {
+      background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+      color: #fff;
+      padding: 14px 16px 18px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 1.2rem;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-badge {
+      background: #facc15;
+      color: #0f172a;
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .tg-top-btn {
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: background 0.2s;
+    }
+
+    .tg-top-btn:hover {
+      background: rgba(255, 255, 255, 0.28);
+    }
+
+    /* Big Reel Code Search Box */
+    .code-search-wrap {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .code-hash-badge {
+      background: #eff6ff;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 8px 11px;
+      border-radius: 8px;
+      margin-right: 6px;
+      white-space: nowrap;
+      border: 1px solid #bfdbfe;
+    }
+
+    .code-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: var(--text);
+      padding: 8px 6px;
+      width: 100%;
+    }
+
+    .code-input::placeholder {
+      color: #94a3b8;
+      font-weight: 500;
+    }
+
+    .code-clear-btn {
+      background: #f1f5f9;
+      border: none;
+      color: #64748b;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: none;
+      margin-right: 4px;
+    }
+
+    .code-go-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 10px 16px;
+      border-radius: 9px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 14px 12px;
+    }
+
+    /* Category Navigation Tabs */
+    .tabs-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .tab-btn {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 6px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .tab-btn .tab-icon {
+      font-size: 1.2rem;
+    }
+
+    .tab-btn .tab-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .tab-btn .tab-sub {
+      font-size: 0.65rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .tab-btn.active {
+      border-color: var(--primary);
+      background: #eff6ff;
+      box-shadow: 0 3px 10px rgba(37, 99, 235, 0.12);
+    }
+
+    .tab-btn.active .tab-title {
+      color: var(--primary-dark);
+    }
+
+    /* Finance Smart Filter Bar (Visible in Finance or All) */
+    .smart-filter-box {
+      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+      border: 1px solid #86efac;
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      display: none;
+    }
+
+    .smart-filter-box.visible {
+      display: block;
+    }
+
+    .smart-filter-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: #065f46;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .chip-row {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+
+    .chip-row::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-chip {
+      background: #ffffff;
+      border: 1px solid #6ee7b7;
+      color: #047857;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .filter-chip.active {
+      background: #059669;
+      color: #ffffff;
+      border-color: #059669;
+    }
+
+    /* Highlighted Exact Code Match Banner */
+    .exact-match-banner {
+      background: #fffbeb;
+      border: 2px solid #f59e0b;
+      border-radius: var(--radius);
+      padding: 12px;
+      margin-bottom: 16px;
+      display: none;
+    }
+
+    .exact-match-header {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #b45309;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    /* Product / Offer Grid */
+    .deals-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 420px) {
+      .deals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+
+    .deal-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow);
+      transition: transform 0.15s ease;
+      position: relative;
+    }
+
+    .deal-card.finance-card {
+      grid-column: span 2;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px;
+      gap: 14px;
+    }
+
+    @media (max-width: 480px) {
+      .deal-card.finance-card {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
+    .code-pill {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: #0f172a;
+      color: #facc15;
+      font-weight: 800;
+      font-size: 0.78rem;
+      padding: 4px 9px;
+      border-radius: 8px;
+      z-index: 2;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+
+    .badge-pill {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: #ef4444;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.68rem;
+      padding: 3px 7px;
+      border-radius: 6px;
+      z-index: 2;
+    }
+
+    .img-wrap {
+      width: 100%;
+      height: 155px;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .finance-card .img-wrap {
+      width: 110px;
+      height: 110px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 480px) {
+      .finance-card .img-wrap {
+        width: 100%;
+        height: 135px;
+      }
+    }
+
+    .img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .card-body {
+      padding: 10px 11px 12px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .finance-card .card-body {
+      padding: 2px 0;
+    }
+
+    .store-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .deal-title {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.32;
+      margin-bottom: 6px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .deal-desc {
+      font-size: 0.74rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 9px;
+      flex-wrap: wrap;
+    }
+
+    .offer-price {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .mrp-price {
+      font-size: 0.76rem;
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+
+    .discount-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--success);
+      background: var(--success-bg);
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.84rem;
+      padding: 10px;
+      border-radius: 9px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 3px 8px rgba(234, 88, 12, 0.25);
+    }
+
+    .finance-card .cta-btn {
+      background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+      box-shadow: 0 3px 8px rgba(22, 163, 74, 0.25);
+    }
+
+    /* Empty state */
+    .empty-box {
+      text-align: center;
+      padding: 36px 16px;
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px dashed #cbd5e1;
+      grid-column: span 2;
+    }
+
+    /* Sticky Bottom Telegram Join Bar */
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      padding: 10px 14px;
+      z-index: 99;
+      box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .bottom-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .bottom-text {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .bottom-sub {
+      font-size: 0.68rem;
+      color: var(--muted);
+    }
+
+    .bottom-tg-btn {
+      background: #0088cc;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 9px 14px;
+      border-radius: 9px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP HEADER WITH INSTANT REEL CODE SEARCH -->
+  <header class="top-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <div class="brand-logo">
+          <span>🛍️ <span id="siteBrandName">SmartBachat</span></span>
+          <span class="brand-badge">Verified Deals</span>
+        </div>
+        <a id="topTelegramLink" href="https://t.me/" target="_blank" rel="noopener" class="tg-top-btn">
+          ✈️ Join Telegram
+        </a>
+      </div>
+
+      <div class="code-search-wrap">
+        <span class="code-hash-badge"># CODE</span>
+        <input
+          type="text"
+          id="codeSearchInput"
+          class="code-input"
+          placeholder="Reel Code (jaise: 101, 102) ya Product likhein..."
+          autocomplete="off"
+        />
+        <button id="clearSearchBtn" class="code-clear-btn" onclick="clearSearch()">✕</button>
+        <button class="code-go-btn" onclick="triggerSearch()">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 3 MAIN TABS -->
+    <div class="tabs-bar">
+      <button class="tab-btn active" data-tab="all" onclick="switchTab('all')">
+        <span class="tab-icon">🔥</span>
+        <span class="tab-title">Viral Reel Codes</span>
+        <span class="tab-sub">#101, #102 Gadgets</span>
+      </button>
+      <button class="tab-btn" data-tab="finance" onclick="switchTab('finance')">
+        <span class="tab-icon">💸</span>
+        <span class="tab-title">Paisa & Cards</span>
+        <span class="tab-sub">₹500+ Free Bonus</span>
+      </button>
+      <button class="tab-btn" data-tab="loot" onclick="switchTab('loot')">
+        <span class="tab-icon">⚡</span>
+        <span class="tab-title">Loot Deals</span>
+        <span class="tab-sub">70%–90% OFF</span>
+      </button>
+    </div>
+
+    <!-- SMART FINANCE FILTER (Helps visitors choose best high-payout card/account) -->
+    <div id="financeFilterBox" class="smart-filter-box">
+      <div class="smart-filter-title">💡 Aapko kya chahiye? (1-Click Smart Filter):</div>
+      <div class="chip-row">
+        <button class="filter-chip active" onclick="filterFinance('all', this)">Sabhi Offers</button>
+        <button class="filter-chip" onclick="filterFinance('card', this)">💳 Lifetime Free Credit Card</button>
+        <button class="filter-chip" onclick="filterFinance('bank', this)">🏦 Zero Balance Bank A/C</button>
+        <button class="filter-chip" onclick="filterFinance('app', this)">📲 Instant Cashback / Refer App</button>
+      </div>
+    </div>
+
+    <!-- EXACT REEL CODE MATCH HIGHLIGHT -->
+    <div id="exactMatchBanner" class="exact-match-banner">
+      <div class="exact-match-header">🎯 Reel Code Match Mil Gaya!</div>
+      <div id="exactMatchContainer"></div>
+    </div>
+
+    <!-- DEALS GRID -->
+    <div id="dealsGrid" class="deals-grid"></div>
+  </main>
+
+  <!-- STICKY TELEGRAM BAR -->
+  <div class="bottom-bar">
+    <div class="bottom-inner">
+      <div>
+        <div class="bottom-text">⚡ Saste Loot Deals sabse pehle paayein!</div>
+        <div class="bottom-sub">Price drop hote hi Telegram par alert aata hai</div>
+      </div>
+      <a id="bottomTelegramLink" href="https://t.me/" target="_blank" rel="noopener" class="bottom-tg-btn">
+        Join Channel →
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // DEFAULT STARTER DEALS (Automatically replaced/merged when synced with Admin)
+    // =========================================================================
+    const DEFAULT_DEALS = [
+      {
+        id: "deal_101",
+        code: "101",
+        category: "gadget",
+        subType: "gadget",
+        store: "Amazon Choice",
+        title: "Mini Rechargeable Sealing Machine (Packet Sealer + Cutter)",
+        desc: "Chips, namkeen aur rasoi ke khule packets ko 2 second me air-tight seal karein.",
+        price: 149,
+        mrp: 499,
+        badge: "🔥 Reel Viral #101",
+        image: "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=500&q=80",
+        link: "https://www.amazon.in/",
+        clicks: 42
+      },
+      {
+        id: "deal_102",
+        code: "102",
+        category: "gadget",
+        subType: "gadget",
+        store: "Amazon / Meesho",
+        title: " High-Pressure Car & Bike Washer Gun (Cordless Portable)",
+        desc: "Bina bijli ke balti ke paani se ghar par gaadi aur bike chamkayein.",
+        price: 699,
+        mrp: 1999,
+        badge: "⭐ Best Seller #102",
+        image: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=500&q=80",
+        link: "https://www.amazon.in/",
+        clicks: 89
+      },
+      {
+        id: "deal_103",
+        code: "103",
+        category: "finance",
+        subType: "card",
+        store: "Lifetime Free • Zero Joining Fee",
+        title: "AU LIT / IDFC First Lifetime Free Credit Card (5% Cashback)",
+        desc: "Koi salana charges nahi! UPI, Petrol aur Online shopping par har mahine ₹1,500+ bachayein. 5 minute me Aadhaar/PAN se video KYC.",
+        price: "FREE",
+        mrp: "₹999 Fee",
+        discountText: "🎁 ₹500 Welcome Voucher",
+        badge: "💸 Top Cashback Card",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=500&q=80",
+        link: "https://www.banksathi.com/",
+        clicks: 64
+      },
+      {
+        id: "deal_104",
+        code: "104",
+        category: "finance",
+        subType: "bank",
+        store: "RBI Approved • Zero Balance",
+        title: "Kotak 811 / IndusInd Zero Balance Digital Savings Account",
+        desc: "Ghar baithe 5 minute me Zero Balance khata kholein. Minimum balance rakhne ka koi jhanjhat nahi + Free Virtual Debit Card.",
+        price: "₹0 Balance",
+        mrp: "",
+        discountText: "✅ 5 Min Video KYC",
+        badge: "🏦 Best Zero Balance",
+        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=500&q=80",
+        link: "https://www.banksathi.com/",
+        clicks: 51
+      },
+      {
+        id: "deal_105",
+        code: "105",
+        category: "loot",
+        subType: "loot",
+        store: "Myntra / Flipkart Loot",
+        title: "boAt Airdopes ANC True Wireless Earbuds (50 Hrs Playback)",
+        desc: "Limited time price drop! Fast charging + clear mic quality.",
+        price: 799,
+        mrp: 2990,
+        badge: "⚡ 73% OFF Loot",
+        image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=500&q=80",
+        link: "https://www.flipkart.com/",
+        clicks: 118
+      },
+      {
+        id: "deal_106",
+        code: "106",
+        category: "finance",
+        subType: "app",
+        store: "SEBI Registered • Free Demat",
+        title: "AngelOne / Upstox Free Account (₹0 AMC + Refer & Earn ₹500)",
+        desc: "Free account kholein aur apne dosto ko refer karke har successful account par ₹300 se ₹500 seedha bank me kamayein.",
+        price: "FREE",
+        mrp: "₹249",
+        discountText: "💰 Earn ₹500/Refer",
+        badge: "🔥 High Earning",
+        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=500&q=80",
+        link: "https://www.banksathi.com/",
+        clicks: 77
+      }
+    ];
+
+    const STORAGE_KEY = "smartbachat_hub_data_v1";
+    const CONFIG_KEY = "smartbachat_hub_config_v1";
+
+    let allDeals = [];
+    let currentTab = "all";
+    let currentFinanceFilter = "all";
+    let siteConfig = {
+      brandName: "SmartBachat",
+      telegramUrl: "https://t.me/",
+      firebaseDbUrl: ""
+    };
+
+    function loadData() {
+      try {
+        const savedConfig = localStorage.getItem(CONFIG_KEY);
+        if (savedConfig) {
+          siteConfig = { ...siteConfig, ...JSON.parse(savedConfig) };
+        }
+      } catch (e) {}
+
+      applySiteConfig();
+
+      try {
+        const savedDeals = localStorage.getItem(STORAGE_KEY);
+        if (savedDeals) {
+          const parsed = JSON.parse(savedDeals);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            allDeals = parsed;
+          } else {
+            allDeals = DEFAULT_DEALS;
+          }
+        } else {
+          allDeals = DEFAULT_DEALS;
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_DEALS));
+        }
+      } catch (e) {
+        allDeals = DEFAULT_DEALS;
+      }
+
+      // Check URL parameter ?code=101 or ?db=...
+      const params = new URLSearchParams(window.location.search);
+      const dbParam = params.get("db");
+      if (dbParam) {
+        siteConfig.firebaseDbUrl = dbParam;
+      }
+
+      // Always fetch latest live deals_data.json from cloud
+      fetchLiveDealsJson();
+
+      if (siteConfig.firebaseDbUrl) {
+        fetchFromFirebase(siteConfig.firebaseDbUrl);
+      }
+
+      const codeParam = params.get("code");
+      if (codeParam) {
+        const input = document.getElementById("codeSearchInput");
+        input.value = codeParam.replace(/^#/, "");
+      }
+
+      renderDeals();
+    }
+
+    async function fetchLiveDealsJson() {
+      const urls = [
+        `https://raw.githubusercontent.com/jaie83296-crypto/smartbachat/main/deals_data.json?t=${Date.now()}`,
+        `./deals_data.json?t=${Date.now()}`
+      ];
+      for (const url of urls) {
+        try {
+          const res = await fetch(url, { cache: "no-store" });
+          if (!res.ok) continue;
+          const data = await res.json();
+          if (data && Array.isArray(data.deals) && data.deals.length > 0) {
+            allDeals = data.deals;
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(allDeals));
+          }
+          if (data && data.config) {
+            siteConfig = { ...siteConfig, ...data.config };
+            localStorage.setItem(CONFIG_KEY, JSON.stringify(siteConfig));
+            applySiteConfig();
+          }
+          renderDeals();
+          return;
+        } catch (e) {}
+      }
+    }
+
+    function applySiteConfig() {
+      document.getElementById("siteBrandName").textContent = siteConfig.brandName || "SmartBachat";
+      const tg = siteConfig.telegramUrl || "https://t.me/";
+      document.getElementById("topTelegramLink").href = tg;
+      document.getElementById("bottomTelegramLink").href = tg;
+    }
+
+    async function fetchFromFirebase(dbUrl) {
+      try {
+        const cleanUrl = dbUrl.replace(/\/$/, "");
+        const res = await fetch(`${cleanUrl}/smartbachat.json`);
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data && Array.isArray(data.deals) && data.deals.length > 0) {
+          allDeals = data.deals;
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(allDeals));
+        }
+        if (data && data.config) {
+          siteConfig = { ...siteConfig, ...data.config };
+          localStorage.setItem(CONFIG_KEY, JSON.stringify(siteConfig));
+          applySiteConfig();
+        }
+        renderDeals();
+      } catch (err) {
+        console.warn("Cloud sync skipped:", err);
+      }
+    }
+
+    function switchTab(tab) {
+      currentTab = tab;
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-tab") === tab);
+      });
+
+      const finBox = document.getElementById("financeFilterBox");
+      finBox.classList.toggle("visible", tab === "finance");
+
+      renderDeals();
+    }
+
+    function filterFinance(subType, btnEl) {
+      currentFinanceFilter = subType;
+      document.querySelectorAll(".filter-chip").forEach(c => c.classList.remove("active"));
+      if (btnEl) btnEl.classList.add("active");
+      renderDeals();
+    }
+
+    function calcDiscount(price, mrp, customText) {
+      if (customText) return customText;
+      const p = parseFloat(price);
+      const m = parseFloat(mrp);
+      if (!isNaN(p) && !isNaN(m) && m > p && m > 0) {
+        const pct = Math.round(((m - p) / m) * 100);
+        return `${pct}% OFF`;
+      }
+      return "Best Offer";
+    }
+
+    function buildCardHTML(item) {
+      const isFinance = item.category === "finance";
+      const priceDisplay = !isNaN(parseFloat(item.price)) ? `₹${item.price}` : item.price;
+      const mrpDisplay = item.mrp
+        ? (!isNaN(parseFloat(item.mrp)) ? `₹${item.mrp}` : item.mrp)
+        : "";
+      const disc = calcDiscount(item.price, item.mrp, item.discountText);
+      const btnText = isFinance ? "✅ Apply Free / Claim Bonus →" : "🛒 Check Price / Buy Now →";
+
+      return `
+        <article class="deal-card ${isFinance ? 'finance-card' : ''}">
+          <span class="code-pill">#${item.code}</span>
+          ${item.badge ? `<span class="badge-pill">${item.badge}</span>` : ''}
+          <div class="img-wrap">
+            <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.src='https://placehold.co/400x400/e2e8f0/1e293b?text=Code+%23${item.code}'" />
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="store-tag">${item.store || 'Verified Offer'}</div>
+              <h3 class="deal-title">${item.title}</h3>
+              ${item.desc ? `<p class="deal-desc">${item.desc}</p>` : ''}
+            </div>
+            <div>
+              <div class="price-row">
+                <span class="offer-price">${priceDisplay}</span>
+                ${mrpDisplay ? `<span class="mrp-price">${mrpDisplay}</span>` : ''}
+                <span class="discount-tag">${disc}</span>
+              </div>
+              <a href="${item.link}" target="_blank" rel="noopener" class="cta-btn" onclick="recordClick('${item.id}')">
+                ${btnText}
+              </a>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderDeals() {
+      const queryRaw = document.getElementById("codeSearchInput").value.trim();
+      const query = queryRaw.replace(/^#/, "").toLowerCase();
+      document.getElementById("clearSearchBtn").style.display = queryRaw ? "block" : "none";
+
+      // Check exact code match first
+      const exactBanner = document.getElementById("exactMatchBanner");
+      const exactContainer = document.getElementById("exactMatchContainer");
+
+      if (query && /^\d+$/.test(query)) {
+        const exactItem = allDeals.find(d => String(d.code).toLowerCase() === query);
+        if (exactItem) {
+          exactBanner.style.display = "block";
+          exactContainer.innerHTML = buildCardHTML(exactItem);
+        } else {
+          exactBanner.style.display = "none";
+        }
+      } else {
+        exactBanner.style.display = "none";
+      }
+
+      // Filter list
+      let filtered = allDeals.filter(item => {
+        if (query) {
+          const matchCode = String(item.code).toLowerCase().includes(query);
+          const matchTitle = (item.title || "").toLowerCase().includes(query);
+          const matchDesc = (item.desc || "").toLowerCase().includes(query);
+          const matchStore = (item.store || "").toLowerCase().includes(query);
+          return matchCode || matchTitle || matchDesc || matchStore;
+        }
+
+        if (currentTab === "all") {
+          return true;
+        }
+        if (currentTab === "finance") {
+          if (item.category !== "finance") return false;
+          if (currentFinanceFilter !== "all" && item.subType !== currentFinanceFilter) return false;
+          return true;
+        }
+        if (currentTab === "loot") {
+          return item.category === "loot" || item.category === "gadget";
+        }
+        return true;
+      });
+
+      const grid = document.getElementById("dealsGrid");
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="empty-box">
+            <h3 style="margin-bottom:6px;">Koi matching deal nahi mili</h3>
+            <p style="font-size:0.82rem;color:#64748b;">Code number dubara check karein (jaise 101, 102) ya "Viral Reel Codes" tab par click karein.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(buildCardHTML).join("");
+    }
+
+    function triggerSearch() {
+      renderDeals();
+    }
+
+    function clearSearch() {
+      document.getElementById("codeSearchInput").value = "";
+      renderDeals();
+    }
+
+    function recordClick(dealId) {
+      try {
+        const idx = allDeals.findIndex(d => d.id === dealId);
+        if (idx !== -1) {
+          allDeals[idx].clicks = (allDeals[idx].clicks || 0) + 1;
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(allDeals));
+          if (siteConfig.firebaseDbUrl) {
+            const cleanUrl = siteConfig.firebaseDbUrl.replace(/\/$/, "");
+            fetch(`${cleanUrl}/smartbachat/deals/${idx}/clicks.json`, {
+              method: "PUT",
+              body: JSON.stringify(allDeals[idx].clicks)
+            }).catch(() => {});
+          }
+        }
+      } catch (e) {}
+    }
+
+    document.getElementById("codeSearchInput").addEventListener("input", renderDeals);
+    window.addEventListener("storage", loadData);
+    window.addEventListener("DOMContentLoaded", loadData);
+  </script>
+</body>
+</html>

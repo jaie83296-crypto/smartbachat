@@ -1,0 +1,103 @@
+{
+  "config": {
+    "brandName": "SmartBachat",
+    "siteUrl": "https://jaie83296-crypto.github.io/smartbachat",
+    "telegramUrl": "https://t.me/"
+  },
+  "deals": [
+    {
+      "id": "deal_101",
+      "code": "101",
+      "category": "gadget",
+      "subType": "gadget",
+      "store": "Amazon Choice",
+      "title": "Mini Rechargeable Sealing Machine (Packet Sealer + Cutter)",
+      "desc": "Chips, namkeen aur rasoi ke khule packets ko 2 second me air-tight seal karein.",
+      "price": 149,
+      "mrp": 499,
+      "badge": "🔥 Reel Viral #101",
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=500&q=80",
+      "link": "https://www.amazon.in/",
+      "clicks": 42
+    },
+    {
+      "id": "deal_102",
+      "code": "102",
+      "category": "gadget",
+      "subType": "gadget",
+      "store": "Amazon / Meesho",
+      "title": "High-Pressure Car & Bike Washer Gun (Cordless Portable)",
+      "desc": "Bina bijli ke balti ke paani se ghar par gaadi aur bike chamkayein.",
+      "price": 699,
+      "mrp": 1999,
+      "badge": "⭐ Best Seller #102",
+      "image": "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=500&q=80",
+      "link": "https://www.amazon.in/",
+      "clicks": 89
+    },
+    {
+      "id": "deal_103",
+      "code": "103",
+      "category": "finance",
+      "subType": "card",
+      "store": "Lifetime Free • Zero Joining Fee",
+      "title": "AU LIT / IDFC First Lifetime Free Credit Card (5% Cashback)",
+      "desc": "Koi salana charges nahi! UPI, Petrol aur Online shopping par har mahine ₹1,500+ bachayein. 5 minute me Aadhaar/PAN se video KYC.",
+      "price": "FREE",
+      "mrp": "₹999 Fee",
+      "discountText": "🎁 ₹500 Welcome Voucher",
+      "badge": "💸 Top Cashback Card",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=500&q=80",
+      "link": "https://www.banksathi.com/",
+      "clicks": 64
+    },
+    {
+      "id": "deal_104",
+      "code": "104",
+      "category": "finance",
+      "subType": "bank",
+      "store": "RBI Approved • Zero Balance",
+      "title": "Kotak 811 / IndusInd Zero Balance Digital Savings Account",
+      "desc": "Ghar baithe 5 minute me Zero Balance khata kholein. Minimum balance rakhne ka koi jhanjhat nahi + Free Virtual Debit Card.",
+      "price": "₹0 Balance",
+      "mrp": "",
+      "discountText": "✅ 5 Min Video KYC",
+      "badge": "🏦 Best Zero Balance",
+      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=500&q=80",
+      "link": "https://www.banksathi.com/",
+      "clicks": 51
+    },
+    {
+      "id": "deal_105",
+      "code": "105",
+      "category": "loot",
+      "subType": "loot",
+      "store": "Myntra / Flipkart Loot",
+      "title": "boAt Airdopes ANC True Wireless Earbuds (50 Hrs Playback)",
+      "desc": "Limited time price drop! Fast charging + clear mic quality.",
+      "price": 799,
+      "mrp": 2990,
+      "badge": "⚡ 73% OFF Loot",
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=500&q=80",
+      "link": "https://www.flipkart.com/",
+      "clicks": 118
+    },
+    {
+      "id": "deal_106",
+      "code": "106",
+      "category": "finance",
+      "subType": "app",
+      "store": "SEBI Registered • Free Demat",
+      "title": "AngelOne / Upstox Free Account (₹0 AMC + Refer & Earn ₹500)",
+      "desc": "Free account kholein aur apne dosto ko refer karke har successful account par ₹300 se ₹500 seedha bank me kamayein.",
+      "price": "FREE",
+      "mrp": "₹249",
+      "discountText": "💰 Earn ₹500/Refer",
+      "badge": "🔥 High Earning",
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=500&q=80",
+      "link": "https://www.banksathi.com/",
+      "clicks": 77
+    }
+  ],
+  "updatedAt": "2026-10-19T15:26:00+05:30"
+}
